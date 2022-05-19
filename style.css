@@ -175,11 +175,11 @@
 nav {
   width: 100%;
   padding: 0;
-  top: 20vw;
+  top: 2vw;
   /* left: 35%; */
   margin: auto;
   text-align: center;
-  /* position: fixed; */
+  position: fixed;
   z-index: 3;
   margin-bottom: 8vw;
 }
@@ -201,11 +201,11 @@ nav a {
   font-size: 0.9vw;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  padding: 5px 30px;
+  padding: 5px 25px;
 }
 
 nav a:hover {
-  opacity: 50%;
+  color: rgb(59, 186, 144);
 }
 
 /* ----------------------------------------------------------------------- */
@@ -246,10 +246,16 @@ body::-webkit-scrollbar-track {
   /*스크롤바 뒷 배경 색상*/
 }
 
+.intro-gif {
+  margin: auto;
+  text-align: center;
+  object-fit: cover;
+}
+
 .intro-img {
   text-align: center;
   margin: auto;
-  margin-top: -1vw;
+  margin-top: 8vw;
   margin-bottom: 4vw
 }
 
@@ -261,9 +267,11 @@ body::-webkit-scrollbar-track {
 }
 
 .resume-button {
-  font-size: 4vw;
+  font-size: 2.3vw;
   margin-left: 88vw;
-  margin-top: 2vw;
+  margin-top: -7vw;
+  z-index: 11;
+  position: fixed;
 }
 
 .resume-button>a {
@@ -272,62 +280,57 @@ body::-webkit-scrollbar-track {
 }
 
 .resume-button>a:hover {
-  text-decoration: underline;
+  opacity: 50%;
 }
 
 .img-gallery-text {
-  margin-top: 3vw;
-  font-size: 1.1vw;
   width: 100%;
+  font-size: 1.1vw;
   text-align: center;
-  line-height: 1.9vw;
+  color: rgb(57, 57, 57);
 }
 
 .img-gallery {
   width: 100%;
-  margin-top: 2vw;
+  margin-top: 4vw;
   text-align: center;
 }
-
-/* .gallery-img:hover {
-    transform: scale(1.4);
-    transition: all .2s ease-in-out;
-  } */
 
 .line {
   width: 100%;
   height: 0.05vw;
   background-color: rgb(54, 54, 54);
-  margin-bottom: 2vw;
+  margin-top: 10vw;
   text-align: center;
 }
 
 /* projects */
-.thumbnail-img {}
-
 .projects-text {
-  font-size: 4vw;
-  margin-left: 8vw;
-  margin-top: 10vw;
-  margin-bottom: 1vw;
+  font-size: 3vw;
+  /* margin-left: 8vw; */
+  margin-top: 12vw;
+  text-align: center;
+  margin-bottom: 0.5vw;
+}
+
+.photographic-text {
+  font-size: 3vw;
+  /* margin-left: 8vw; */
+  margin-top: 5vw;
+  text-align: center;
+  margin-bottom: 0.5vw;
 }
 
 .projects-wrap {
   width: 90%;
   margin: auto;
-  margin-top: 4vw;
+  margin-top: 6vw;
 }
 
 projects-icon {
   padding-left: 60vw;
   /* color: aquamarine; */
 }
-
-.thumbnail-wrap-pb,
-.thumbnail-wrap-sillim {}
-
-.thumbnail-wrap-web,
-.thumbnail-wrap-me {}
 
 .a,
 .b {
@@ -382,6 +385,7 @@ thumbnail-b-1 {
   margin-left: 8vw;
   margin-top: 18vw;
   position: absolute;
+  animation: updown 1s infinite ease-in-out alternate;
 }
 
 .skills {
@@ -442,7 +446,7 @@ contact-highlight {
 }
 
 .contact>a:hover {
-  opacity: 60%;
+  color: rgb(81, 203, 162);
 }
 
 /* 위아래 animation keyframes */
